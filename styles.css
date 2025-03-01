@@ -1,31 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #F4F7E4 !important;
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7e4 !important;
 }
 
 #container-grid {
-    display: grid;
-    grid-template-rows: auto 1fr auto; 
-    min-height: 100vh; 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 #navbar-container {
-    border-bottom: 2px solid #BBEE4D ;
-    color: 38454c;
+  border-bottom: 2px solid #bbee4d;
+  color: 38454c;
 }
 
 .navbar-logo {
-    height: 62px;
+  height: 62px;
+}
+
+.nav-link {
+  font-family: "Jockey One", sans-serif;
 }
 
 #footer-container {
-    border-top: 2px solid #BBEE4D;
+  border-top: 2px solid #bbee4d;
 }
