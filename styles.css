@@ -22,6 +22,10 @@ html, body {
     color: 38454c;
 }
 
+.navbar-logo {
+    height: 62px;
+}
+
 #footer-container {
     border-top: 2px solid #BBEE4D;
 }
