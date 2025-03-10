@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   imgProducts.forEach(img => {
     const imgContainer = document.createElement("div");
     imgContainer.className =
-      "col-12 col-md-6 col-lg-4 d-flex justify-content-center my-2";
+      "col-12 col-md-6 col-lg-4 d-flex justify-content-center my-2 p-2";
 
     const product = document.createElement("img");
     product.src = img.url;
