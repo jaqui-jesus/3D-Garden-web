@@ -19,6 +19,7 @@ body {
 }
 
 #navbar-container {
+  background-color: #f4f7e4;
   border-bottom: 2px solid #bbee4d;
   color: 38454c;
 }
@@ -31,6 +32,48 @@ body {
   font-family: "Jockey One", sans-serif;
 }
 
+.jockey {
+  font-family: "Jockey One", sans-serif;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.office-card {
+  background-image: url('./assets/office-card.jpg');
+  height: 400px;
+}
+
+.red-card {
+  background-color: #c6434e;
+}
+
+.kitchen-card {
+  background-image: url('./assets/kitchen-card.jpg');
+  height: 400px;
+}
+
+.green-card {
+  background-color: #bbee4d;
+}
+
+.garden-card {
+  background-image: url('./assets/garden-card.jpg');
+  height: 400px;
+}
+
+.btn-custom-color {
+  background-color: #37C7BD;
+  transition: background-color 0.3s;
+}
+
+.btn-custom-color:hover {
+  background-color: rgba(55, 199, 189, 0.8); /* Fondo con opacidad */
+}
+
 #footer-container {
   border-top: 2px solid #bbee4d;
 }
+
+
