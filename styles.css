@@ -76,15 +76,7 @@ body {
   border-top: 2px solid #bbee4d;
 }
 
-.us-story-text h1{
-  font-family: "Jockey One", sans-serif;
-}
-.us-team h1{
-  font-family: "Jockey One", sans-serif;
-}
-.us-story-text p{
-  font-family: "Roboto flex", sans-serif;
-}
+
 .us-banner {
   width: 100vw; 
   overflow: hidden; 
@@ -96,8 +88,7 @@ body {
   display: block;
 }
 
-
-.timeline-item {
+.us-story .timeline-item {
   display: flex;
   align-items: center;
   width: 100%;
@@ -106,7 +97,7 @@ body {
   padding-bottom: 20px;
 }
 
-.date-bar {
+.us-story .date-bar {
   padding-top: 15px;
   padding-bottom: 15px;
   color: black;
@@ -116,7 +107,7 @@ body {
   font-family: "Jockey One", sans-serif;
 }
 
-.image-container {
+.us-story .image-container {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -125,34 +116,68 @@ body {
   margin-right: 30px; 
 }
 
-.image-container img {
+.us-story .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.text-container {
+.us-story .text-container {
   flex: 1;
   color: 38454C;
   font-family: "Roboto flex", sans-serif;
-  margin-right: 30px;
 }
 
 @media (max-width: 768px) {
-  .timeline-item {
+  .us-story .timeline-item {
     flex-direction: column; /* Hace que los elementos se apilen */
     text-align: center;
   }
 
-  .image-container {
+  .us-story .image-container {
     margin: 10px auto; /* Centra la imagen */
   }
 
-  .date-bar {
-    width: 80%; /* Opcional: Reducir la barra en móviles */
+  .us-story .date-bar {
+    width: 100%; /* Opcional: Reducir la barra en móviles */
   }
 
-  .text-container {
+  .us-story .text-container {
     width: 80%; /* Ajusta el ancho del texto */
   }
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Espacio entre íconos */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #202020;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5;
+}
+
+.social-links a:nth-child(2):hover {
+  color: #798b7f;
+}
+
+#us-team-container .card-img-top {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra con difuminado */
+  border-radius: 50%; /* Mantiene la forma circular */
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Para mantener la proporción sin deformarse */
+}
+
+#us-team-container .card {
+  background-color: transparent !important; /* Quita el fondo blanco */
+  border: none !important; /* Quita los bordes */
+  box-shadow: none !important; /* Si Bootstrap agrega sombra, la elimina */
 }
