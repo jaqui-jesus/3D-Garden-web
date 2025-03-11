@@ -40,6 +40,11 @@ body {
   font-family: "Roboto Flex", sans-serif;
 }
 
+#footer-container {
+  border-top: 2px solid #bbee4d;
+}
+
+/* begin index.html style */
 .office-card {
   background-image: url('./assets/office-card.jpg');
   height: 400px;
@@ -71,9 +76,79 @@ body {
 .btn-custom-color:hover {
   background-color: rgba(55, 199, 189, 0.8); /* Fondo con opacidad */
 }
+/*End index.html styles*/
 
-#footer-container {
-  border-top: 2px solid #bbee4d;
+/* Estilos thank-you */
+/* main {
+  padding-top: 20px; 
+  text-align: center;
+} */
+
+/* Estilo titulo */
+.confir {
+  color:#C6434E;
+  padding-bottom: 2rem;
+}
+
+/* Contenedor principal */
+.confirmation-container {
+  background-color: #BBEE4D; /* Verde */
+  max-width: 500px; /* Ancho máximo */
+  text-align: center;
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Evita que la imagen se salga del contenedor al moverse */
+}
+
+/* Imagen */
+.confirmation-image {
+  width: 100%; /* Ajustar al ancho del contenedor */
+  max-width: 300px; /* Ancho máximo de la imagen */
+  display: block;
+  margin: 0 auto 20px; /* Centrar la imagen y espacio debajo */
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Suaviza la animación */
+  display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+}
+/* Efecto al pasar el cursor en la imagen */
+.confirmation-image:hover {
+  transform: scale(1.1); /*Escala la imagen al 110% de su tramaño*/
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espacio entre botones */
+}
+/*
+
+.btn {
+  background-color: #37C7BD; 
+  color: black; 
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px; 
+  font-size: 1em;
+  width: 80%; 
+  max-width: 300px; 
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3da59e; 
+} */
+
+/* Mensaje de agradecimiento */
+.thank-you-message {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #C6434E;
+  padding-bottom: 20px;
 }
 
 .us-story-text h1{
