@@ -1,87 +1,117 @@
-/*
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-*/
-
 document.addEventListener("DOMContentLoaded", async function() {
-  
-  const container = document.getElementById("us-team-cards");
-
+  const container = document.getElementById("us-team-cards"); //atrapo el contenedor
+  const colors = ["#C6434E", "#BBEE4D", "#37C7BD"]
   try {
     const response = await fetch("../assets/data/developers.json"); // Cargar el JSON
-    
     if (!response.ok) {
       throw new Error(`Error HTTP: ${response.status}`);
     }
-
     const data = await response.json();
-    console.log("JSON:", data);
+    //console.log("JSON:", data);
+    container.innerHTML = ""; 
 
-    data.developers.forEach(dev => {
+    data.developers.forEach((dev, i ) =>{
+      //Crear contenedor de cada card
       const devCard = document.createElement("div");
-      devCard.className = " col-12 col-md-6 col-lg-3 mb-2";
+      devCard.className = "card col-12 col-md-6 col-lg-4 text-center mb-5";
+      //Crear elemento **imagen  
+      const devImg = document.createElement("img");
+      devImg.src = dev.img;
+      devImg.alt = dev.name;
+      devImg.className = "card-img-top rounded-circle mx-auto mt-3 mb-2";
+      devImg.style = "d-block w-100" 
+      //Crear elemento **div con sus respectivos textos y botones
+      const devText = document.createElement("div");
+      devText.className = "card-body rounded-bottom-5";
+      const title = document.createElement("h3");
+      title.innerText = dev.name;
+      title.style.fontWeight = "700";
+      const rol = document.createElement("p");
+      rol.innerText = dev.rol;
+      rol.style.fontStyle = "italic";
+      rol.className = "pt-4";
+      const bio = document.createElement("p");
+      bio.innerText = dev.bio;
+      bio.className = "card-text pe-5 ps-5 pb-3";
+      // Contenedor para los enlaces sociales
+      const socialLinks = document.createElement("div");
+      socialLinks.className = "social-links";
+      //LinkedIn con ícono
+      const linkedinLink = document.createElement("a");
+      linkedinLink.href = dev.linkedin;
+      linkedinLink.target = "_blank";
+      linkedinLink.innerHTML = '<i class="fab fa-linkedin fa-2x"></i>'; // Ícono de LinkedIn
+      //GitHub con ícono
+      const githubLink = document.createElement("a");
+      githubLink.href = dev.github;
+      githubLink.target = "_blank";
+      githubLink.innerHTML = '<i class="fab fa-github fa-2x"></i>'; // Ícono de GitHub
+      // Agregar los enlaces al contenedor
+      socialLinks.appendChild(linkedinLink);
+      socialLinks.appendChild(githubLink);
+      //Agregar elementos al DOM
+      devText.append(rol, title, bio, socialLinks);
+      devCard.append(devImg, devText);
+      container.appendChild(devCard);
+    });
+      // Aplicar colores según la pantalla actual
+      applyColors();
+      // Agregar un solo event listener para actualizar colores cuando cambia el tamaño de pantalla
+      window.addEventListener("resize", applyColors);
+  } catch (error) {
+    console.error("Error al cargar los desarrolladores:", error);
+  }
 
-      devCard.innerHTML = `
-        <div class="card text-center shadow-lg border-0">
-          <img src="${dev.img}" class="card-img-top rounded-circle mx-auto mt-3" alt="${dev.name}" style="width: 100px; height: 100px;">
-          <div class="card-body">
-            <h5 class="card-title">${dev.name}</h5>
-            <p class="card-text">${dev.rol}</p>
-            <p class="card-text">${dev.bio}</p>
-            <div>
-              <a href="${dev.linkedin}" target="_blank" class="btn btn-primary btn-sm">LinkedIn</a>
-              <a href="${dev.github}" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-            </div>
-          </div>
-        </div>
-      `;
-
-    container.appendChild(devCard);
-  });
-
-} catch (error) {
-  console.error("Error al cargar los desarrolladores:", error);
-}
-
-// Fetch para la línea del tiempo
-fetch("../assets/data/story.json")
-.then(response => response.json())
-.then(data => {
-  
-  const storyDiv = document.getElementById("us-story-timeline");
-  const colors = ["#C6434E", "#BBEE4D", "#37C7BD"]; // Colores a alternar
-
-  data.story.forEach(item => {
-    const timelineItem = document.createElement("div");
-    timelineItem.classList.add("timeline-item");
-
-    timelineItem.innerHTML = `
-        <div class="date-bar"><h2>${item.date}</h2></div>
-        <div class="image-container">
-            <img src="${item.img}" alt="Evento">
-        </div>
-        <div class="text-container lead">${item.description}</div>
-    `;
-      const bars = document.querySelectorAll(".date-bar");
+  // Función para obtener el tamaño del grupo según la pantalla
+  function getGroupSize() {
+    if (window.innerWidth >= 992) return 3; // Desktop: cada 3 tarjetas
+    if (window.innerWidth >= 768) return 2; // Tablet: cada 2 tarjetas
+    return 1; // Mobile: cada 1 tarjeta
+  }
+  // Función para aplicar colores dinámicamente
+  function applyColors() {
+    const devTexts = document.querySelectorAll(".card-body");
+    const groupSize = getGroupSize();
+    devTexts.forEach((devText, i) => {
+      devText.style.backgroundColor = colors[Math.floor(i / groupSize) % colors.length];
+    });
+  }
 
 
-    storyDiv.appendChild(timelineItem);
-    bars.forEach((bar, index) => {
-      bar.style.backgroundColor = colors[index % colors.length]; // Asigna el color alternando
-      });
-  });
-})
-.catch(e => console.log("Error de carga de JSON", e));
+  // Fetch para la línea del tiempo
+  fetch("../assets/data/story.json")
+  .then(response => response.json())
+  .then(data => {
+    
+    const storyDiv = document.getElementById("us-story-timeline");
 
+    data.story.forEach((item, i) => {
+      const timelineItem = document.createElement("div");
+      timelineItem.classList.add("timeline-item");
+      //creación de elementos de línea del tiempo
+      const divDate = document.createElement("div");
+      const divImg = document.createElement("div");
+      const divText = document.createElement("div");
+      const date = document.createElement("h2");
+      const img = document.createElement("img");
 
+      divDate.className = "date-bar";
+      divDate.style.backgroundColor = colors[i % colors.length];
+      date.innerHTML = item.date;
+      divDate.appendChild(date);
 
+      divImg.className = "image-container";
+      img.src = item.img;
+      img.alt = "evento";
+      divImg.appendChild(img);
 
+      divText.className = "text-container lead";
+      divText.innerText = item.description;
+      
+      timelineItem.append(divDate, divImg, divText);
 
-
+      storyDiv.appendChild(timelineItem);
+    }); // cierra containers
+  }) //cierra fetch de historia
+  .catch(e => console.log("Error de carga de JSON", e));
 });
