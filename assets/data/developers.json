@@ -1,0 +1,68 @@
+{
+    "developers": [
+        {
+            "name": "Enrique García Molina",
+            "bio": "Mi objetivo es seguir creciendo como desarrollador, especializándome en tecnologías backend y análisis de datos, aportando valor a empresas que busquen innovación y optimización en sus procesos.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/enrique.garcia.jpeg",
+            "linkedin": "https://www.linkedin.com/in/gmenrique141/",
+            "github": ""
+        },
+        {
+            "name": "Luis Miguel Vera",
+            "bio": "Un entusiasta del desarrollo de software, actualmente enfocado al desarrollo web full stack e Ing. de Telecom, sistemas y electrónica. Siempre buscando aprender nuevas tecnologías para brindar las mejores soluciones.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/luis.vera.jpeg",
+            "linkedin": "https://www.linkedin.com/in/lmvc-dev",
+            "github": ""
+        },
+        {
+            "name": "Alan Alexis Vargas Gamboa",
+            "bio": "Desarrollador Fullstack y líder de proyectos con más de 3 años de experiencia en gestión de iniciativas tecnológicas y organizacionales, aplicando metodologías ágiles (Scrum) y tradicionales (PMI). Experto en planificación estratégica, coordinación de equipos multifuncionales y mitigación de riesgos.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/alan.gamboa.jpeg",
+            "linkedin":"https://www.linkedin.com/in/alan-alexis-vargas-gamboa-/",
+            "github": ""
+        },
+        {
+            "name": "Jaqueline Jesús León",
+            "bio": "Soy una desarrolladora con gran pasión por el mundo del desarrollo web, ayudo a crear soluciones tecnológicas eficientes y funcionales, combinando mi formación en desarrollo de software con una gran capacidad de aprendizaje y adaptación.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/jaqueline.jesus.jpeg",
+            "linkedin": "https://www.linkedin.com/in/jaquelinejesusleon/",
+            "github": ""
+        },
+        {
+            "name": "Yair Godofredo Guadarrama Gonzaga",
+            "bio": "Desarrollo soluciones web escalables y eficientes que mejoran la experiencia del usuario. Con experiencia en servicio al cliente y servicios financieros, combino conocimientos técnicos con habilidades de comunicación para lograr resultados impactantes. Apasionado por el aprendizaje continuo, la colaboración y la creación de productos digitales de alta calidad.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/yair.guadarrama.jpeg",
+            "linkedin": "https://www.linkedin.com/in/yair-guadarrama-gg95",
+            "github": "https://github.com/Yairgg95"
+        },
+        {
+            "name": "Irving Yair González Lamadrid",
+            "bio": "Soy un desarrollador java full stack  con experiencia en atención a clientes y mercadotecnia  busco poner en práctica mis conocimientos en la industria de la tecnología y la programación, en la industria de la tecnología para poner en práctica mis conocimientos de la carrera y el bootcamp.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/irving.lamadrid.jpeg",
+            "linkedin": "https://www.linkedin.com/in/irving-yair-gonz%C3%A1lez-lamadrid-511756213/",
+            "github": "https://github.com/IrvingLamadrid"
+        },
+        {
+            "name": "Joaquín Rodríguez Durán",
+            "bio": "Soy un desarrollador Fullstack Java e Ingeniero en Sistemas Computacionales con experiencia en soporte técnico y resolución de problemas en entornos en la nube.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/joaquin.rodriguez.jpeg",
+            "linkedin": "https://www.linkedin.com/in/joaquin-rdz/ ",
+            "github": "https://github.com/JoaquinRodriguezD"
+        },
+        {
+            "name": "Frida Mercado",
+            "bio": "Soy desarrolladora Fullstack Java e ing en energía y desarrollo sustentable, cuento con habilidades de analista de ciberseguridad jr, lo que me permite abordar de manera integral los desafíos tecnológicos y ambientales de nuestro tiempo, contribuyendo al mundo digital ofreciendo soluciones con una perspectiva que aborde seguridad informática y sustentabilidad.",
+            "rol": "Fullstack Developer",
+            "img": "../assets/frida.mercado.jpeg",
+            "linkedin": "https://www.linkedin.com/in/fridamercado/",
+            "github": "https://github.com/FridaMercado"
+        }
+    ]
+}
