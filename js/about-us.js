@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       img.alt = "evento";
       divImg.appendChild(img);
 
-      divText.className = "text-container lead";
+      divText.className = "text-container lead bg-green-opacity rounded-3";
       divText.innerText = item.description;
       
       timelineItem.append(divDate, divImg, divText);
