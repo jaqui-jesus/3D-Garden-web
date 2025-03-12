@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       const date = document.createElement("h2");
       const img = document.createElement("img");
 
-      divDate.className = "date-bar";
+      divDate.className = "date-bar rounded-3";
       divDate.style.backgroundColor = colors[i % colors.length];
       date.innerHTML = item.date;
       divDate.appendChild(date);
