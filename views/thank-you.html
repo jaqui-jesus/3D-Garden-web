@@ -19,40 +19,46 @@
     <header id="navbar-container"></header>
     
     <!--Dentro de aqui voy a trabajar-->
-    <main>
+  <main class="container-lg" id="marco">
             <!-- Título principal -->
-    <h1 class="confir" class="jockey">Confirmación de pedido</h1>
+  <div class="bg-green-opacity">
+    <h1 class="text-center display-1 d-none d-sm-block jockey">Confirmación de pedido</h1>
+    <h1 class="text-center display-5 d-block d-sm-none jockey">Confirmación de pedido</h1>
+  </div>
+    
         <!-- Contenedor principal -->
-    <div class="confirmation-container">
+    <div class="container confirmation-container">
       <!-- Imagen en el centro arriba -->
       <img src="../assets/image 59.png" alt="Imagen de confirmación" class="confirmation-image">
 
       <!-- Botones -->
       <div class="button-container">
-          <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn" class="roboto-flex">Ver detalles del pedido</a>
+        <a type="button" href="./products.html" class="btn roboto-flex btn btn-custom-color rounded-pill text-white text-decoration-none">Ver más productos</a>
+          
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel" class="jockey">Detalles de tu pedido</h1>
+                    <h1 class="modal-title fs-5 roboto-flex" id="staticBackdropLabel">Detalles de tu pedido</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-dialog modal-dialog-scrollable">
                     ...
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" class="roboto-flex">Cerrar</button>
+                    <button type="button" class="btn btn-secondary roboto-flex btn btn-custom-color rounded-pill text-white text-decoration-none" data-bs-dismiss="modal">Cerrar</button>
                   </div>
                 </div>
               </div>
             </div>
-          <a href="./products.html" class="btn" class="roboto-flex">Ver más productos</a>
-      </div>
+        <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn roboto-flex btn btn-custom-color rounded-pill text-white text-decoration-none">Ver detalles del pedido</a>
+  </main>
+    <!-- Mensaje de agradecimiento -->
+  <div class="bg-green-opacity">
+    <h2 class="text-center display-1 d-none d-sm-block thank-you-message jockey">¡Gracias por tu compra!</h2>
+    <h2 class="text-center display-5 d-block d-sm-none thank-you-message jockey">¡Gracias por tu compra!</h2>
   </div>
-  <!-- Mensaje de agradecimiento -->
-  <h2 class="thank-you-message" class="jockey">¡Gracias por tu compra!</h2>
-    </main>
   <!---Termino thank-you-->
   
     <footer id="footer-container"></footer>
