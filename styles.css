@@ -93,17 +93,14 @@ body {
   padding-top: 20px; 
   text-align: center;
 } */
-
-/* Estilo titulo */
-.confir {
-  color:#C6434E;
-  padding-bottom: 2rem;
+#marco {
+  padding-top: 20px;
 }
 
 /* Contenedor principal */
 .confirmation-container {
   background-color: #BBEE4D; /* Verde */
-  max-width: 500px; /* Ancho máximo */
+  max-width: 600px; /* Ancho máximo */
   text-align: center;
   margin: 0 auto; /* Centrar el contenedor */
   padding: 30px;
@@ -115,9 +112,9 @@ body {
 /* Imagen */
 .confirmation-image {
   width: 100%; /* Ajustar al ancho del contenedor */
-  max-width: 300px; /* Ancho máximo de la imagen */
+  max-width: 350px; /* Ancho máximo de la imagen */
   display: block;
-  margin: 0 auto 20px; /* Centrar la imagen y espacio debajo */
+  margin: 0 auto 30px; /* Centrar la imagen y espacio debajo */
   border-radius: 10px;
   transition: transform 0.3s ease; /* Suaviza la animación */
   display: block; /* Asegura que la imagen no tenga espacio extra debajo */
@@ -156,7 +153,7 @@ body {
 /* Mensaje de agradecimiento */
 .thank-you-message {
   margin-top: 30px;
-  font-size: 2rem;
+  font-size: 25px;
   color: #C6434E;
   padding-bottom: 20px;
 }
