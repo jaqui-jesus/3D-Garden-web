@@ -10,15 +10,123 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
-    <link rel="icon" href="../assets/meta-logo.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+    />
+    <link rel="icon" href="../assets/meta-logo.png" />
     <title>Perzonaliza tu pedido</title>
   </head>
   <body id="container-grid">
     <header id="navbar-container"></header>
 
-    <main>
-        <div class="container"></div>
+    <main class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card bg-blue">
+            <div class="card-body">
+              <div>
+                <h1 class="text-center display-1 d-none d-sm-block jockey">
+                  Personaliza tu Maceta
+                </h1>
+                <h1 class="text-center display-5 d-block d-sm-none jockey">
+                  Personaliza tu Maceta
+                </h1>
+              </div>
+              <form id="formularioMaceta">
+                <div class="mb-3">
+                  <label for="diseñoMaceta" class="form-label roboto-flex"
+                    >Forma</label
+                  >
+                  <select class="form-select" id="diseñoMaceta" required>
+                    <option value="" selected>Selecciona una opción</option>
+                    <option value="Cilíndrica">Cilíndrica</option>
+                    <option value="Cuadrada">Cuadrada</option>
+                    <option value="Rectangular">Rectangular</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="dimensiones" class="form-label roboto-flex"
+                    >Dimensiones (cm)</label
+                  >
+                  <div class="row g-2">
+                    <div class="col-12 col-sm-4">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Altura"
+                        id="altura"
+                        min="10"
+                        max="30"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Ancho"
+                        id="ancho"
+                        min="10"
+                        max="30"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Profundidad"
+                        id="profundidad"
+                        min="10"
+                        max="30"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="fechaEntrega" class="form-label roboto-flex"
+                    >Fecha de Entrega Deseada</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="fechaEntrega"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="imagenMaceta" class="form-label roboto-flex"
+                    >Cargar Imagen</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="imagenMaceta"
+                    accept="image/*"
+                  />
+                  <button
+                    type="button"
+                    id="borrarImagen"
+                    class="btn btn-primary mt-2"
+                    style="display: none"
+                  >
+                    Borrar Imagen
+                  </button>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 roboto-flex">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer id="footer-container"></footer>
@@ -30,6 +138,6 @@
     ></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/footer.js"></script>
-    <!-- <script src="./js/logica-de-la-pagina"></script> -->
+    <script src="../js/customization.js"></script>
   </body>
 </html>
