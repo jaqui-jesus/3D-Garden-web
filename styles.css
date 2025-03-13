@@ -77,3 +77,19 @@ body {
 }
 
 
+.container-mt-4 {
+  background-color: rgba(243, 65, 41, 0.493);
+  border-radius: 6px;
+  padding: 15px;
+  font-family: "Jockey One", sans-serif;
+  max-width: 1000px; /* Ajusta el tamaño máximo que deseas */
+  margin: 0 auto; /* Centra el contenedor */
+  padding-left: 30px; /* Opcional: Agregar espacio extra a la izquierda */
+  padding-right: 30px; /* Opcional: Agregar espacio extra a la derecha */
+  border: 2px solid rgba(0, 0, 0, 0.158); /* Aquí defines el borde */
+  text-align: center;
+}
+
+
+
+
