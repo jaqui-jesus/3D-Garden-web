@@ -263,3 +263,25 @@ body {
   border: none !important; /* Quita los bordes */
   box-shadow: none !important; /* Si Bootstrap agrega sombra, la elimina */
 }
+
+
+/*Begin products styles*/
+.products *{
+  color: #38454C;
+}
+
+.products button{
+  background-color: #37C7BD;
+}
+
+.products-img{
+  height: 40%;
+  width: 90%;
+  margin-top: 5%;
+  object-fit: cover;
+}
+
+.col-product{
+  height: 480px;
+}
+/*End products styles*/
