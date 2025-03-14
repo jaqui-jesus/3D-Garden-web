@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       const date = document.createElement("h2");
       const img = document.createElement("img");
 
-      divDate.className = "date-bar";
+      divDate.className = "date-bar rounded-3";
       divDate.style.backgroundColor = colors[i % colors.length];
       date.innerHTML = item.date;
       divDate.appendChild(date);
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       img.alt = "evento";
       divImg.appendChild(img);
 
-      divText.className = "text-container lead";
+      divText.className = "text-container lead bg-green-opacity rounded-3";
       divText.innerText = item.description;
       
       timelineItem.append(divDate, divImg, divText);
