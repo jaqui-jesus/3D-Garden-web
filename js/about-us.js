@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       devImg.src = dev.img;
       devImg.alt = dev.name;
       devImg.className = "card-img-top rounded-circle mx-auto mt-3 mb-2";
+      devImg.setAttribute = ("id","imgStory");
       devImg.style = "d-block w-100" 
       //Crear elemento **div con sus respectivos textos y botones
       const devText = document.createElement("div");
