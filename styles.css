@@ -150,6 +150,7 @@ body {
   background-color: #3da59e; 
 } */
 
+
 /* Mensaje de agradecimiento */
 .thank-you-message {
   margin-top: 30px;
@@ -275,3 +276,20 @@ body {
   border: none !important; /* Quita los bordes */
   box-shadow: none !important; /* Si Bootstrap agrega sombra, la elimina */
 }
+
+
+/* 
+Shopping cart review
+.container-mt-4 {
+  background-color: rgba(243, 65, 41, 0.493);
+  border-radius: 6px;
+  padding: 15px;
+  font-family: "Jockey One", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding-left: 30px; 
+  padding-right: 30px; 
+  border: 2px solid rgba(0, 0, 0, 0.158); 
+  text-align: center;
+} */
+
