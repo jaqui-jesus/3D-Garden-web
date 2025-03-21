@@ -263,3 +263,14 @@ body {
   border: none !important; /* Quita los bordes */
   box-shadow: none !important; /* Si Bootstrap agrega sombra, la elimina */
 }
+/* Estilos para el toast responsivo */
+.toast {
+  max-width: 90%; /* Limita el ancho máximo del toast */
+  margin: 0 auto; /* Centra el toast horizontalmente */
+}
+
+@media (min-width: 576px) {
+  .toast {
+    max-width: 400px; /* Ajusta el ancho máximo para pantallas más grandes */
+  }
+}
