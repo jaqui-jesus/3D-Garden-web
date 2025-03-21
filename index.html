@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./assets/meta-logo.png" />
@@ -35,7 +36,7 @@
             alt="imagen principal"
           />
         </div>
-        <div class="container my-5">
+        <div class="container my-5  rounded-3 bg-green-opacity">
           <h1 class="text-center display-1 d-none d-sm-block jockey">
             Bienvenido a 3D-Garden
           </h1>
@@ -43,7 +44,7 @@
             Bienvenido a 3D-Garden
           </h1>
         </div>
-        <div class="container">
+        <div class="container rounded-3 bg-green-opacity">
           <p class="display-5 text-center d-none d-sm-block roboto-flex">
             Transforma tus espacios con macetas impresas en 3D, diseñadas para
             darle un toque único y moderno a tu decoración. En 3D-Garden,
@@ -59,7 +60,7 @@
         </div>
       </section>
       <section>
-        <div class="container my-5">
+        <div class="container my-5 rounded-3 bg-green-opacity">
           <h1 class="text-center display-1 d-none d-sm-block jockey">
             Personaliza tu espacio
           </h1>
@@ -68,7 +69,6 @@
           </h1>
         </div>
         <div class="container my-5">
-          <!-- Card Oficina (MD+) -->
           <div
             class="container-fluid p-0 d-none d-md-flex flex-column my-5 rounded overflow-hidden shadow office-card"
           >
@@ -89,7 +89,6 @@
             </div>
           </div>
 
-          <!-- Card Oficina (SM) -->
           <div
             class="container-fluid p-0 d-flex d-md-none flex-wrap my-5 rounded overflow-hidden shadow office-card"
           >
@@ -111,7 +110,6 @@
             <div class="col-12" style="height: 50%"></div>
           </div>
 
-          <!-- Card Hogar (MD+) -->
           <div
             class="container-fluid p-0 d-none d-md-flex flex-column my-5 rounded overflow-hidden shadow kitchen-card"
           >
@@ -132,7 +130,6 @@
             </div>
           </div>
 
-          <!-- Card Hogar (SM) -->
           <div
             class="container-fluid p-0 d-flex d-md-none flex-wrap my-5 rounded overflow-hidden shadow kitchen-card"
           >
@@ -154,7 +151,6 @@
             <div class="col-12" style="height: 50%"></div>
           </div>
 
-          <!-- Card Jardín (MD+) -->
           <div
             class="container-fluid p-0 d-none d-md-flex flex-column my-5 rounded overflow-hidden shadow garden-card"
             style="background-image: url('../assets/garden-card.jpg')"
@@ -177,7 +173,6 @@
             </div>
           </div>
 
-          <!-- Card Jardín (SM) -->
           <div
             class="container-fluid p-0 d-flex d-md-none flex-wrap my-5 rounded overflow-hidden shadow garden-card"
             style="background-image: url('../assets/garden-card.jpg')"
@@ -204,7 +199,7 @@
       </section>
 
       <section class="container-lg my-5">
-        <div class="container my-5">
+        <div class="container my-5 rounded-3 bg-green-opacity">
           <h1 class="text-center display-1 d-none d-sm-block jockey">
             Nuestros productos
           </h1>
@@ -212,6 +207,8 @@
             Nuestros productos
           </h1>
         </div>
+        <div id="products-container" class="container my-5 d-flex flex-wrap justify-content-between"></div>
+
       </section>
     </main>
 
