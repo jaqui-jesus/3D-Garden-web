@@ -54,6 +54,10 @@ body {
 
 }
 
+.bg-blue {
+  background-color: #C5EBE8 !important;
+}
+
 /* begin index.html style */
 .office-card {
   background-image: url('./assets/office-card.jpg');
