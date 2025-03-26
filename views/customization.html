@@ -20,7 +20,7 @@
   <body id="container-grid">
     <header id="navbar-container"></header>
 
-    <main class="container mt-5 mb-5">
+    <main class="container mt-5 mb-5 bg-blue">
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
           <div class="card bg-blue">
@@ -36,7 +36,7 @@
               <form id="formularioMaceta">
                 <div class="mb-3">
                   <label for="diseñoMaceta" class="form-label roboto-flex"
-                    >Forma</label
+                    >Forma:</label
                   >
                   <select class="form-select" id="diseñoMaceta" required>
                     <option value="" selected>Selecciona una opción</option>
@@ -48,7 +48,7 @@
 
                 <div class="mb-3">
                   <label for="dimensiones" class="form-label roboto-flex"
-                    >Dimensiones (cm)</label
+                    >Dimensiones (cm):</label
                   >
                   <div class="row g-2">
                     <div class="col-12 col-sm-4">
@@ -58,7 +58,8 @@
                         placeholder="Altura"
                         id="altura"
                         min="10"
-                        max="30"
+                        max="23"
+                        value="10"
                         required
                       />
                     </div>
@@ -70,6 +71,7 @@
                         id="ancho"
                         min="10"
                         max="30"
+                        value="10"
                         required
                       />
                     </div>
@@ -80,7 +82,8 @@
                         placeholder="Profundidad"
                         id="profundidad"
                         min="10"
-                        max="30"
+                        max="23"
+                        value="10"
                         required
                       />
                     </div>
@@ -88,15 +91,8 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="fechaEntrega" class="form-label roboto-flex"
-                    >Fecha de Entrega Deseada</label
-                  >
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="fechaEntrega"
-                    required
-                  />
+                  <label for="message" class="form-label roboto-flex">Características:</label>
+                  <textarea class="form-control" id="message" rows="3" style="height: 100px"></textarea>
                 </div>
 
                 <div class="mb-3">
@@ -128,6 +124,27 @@
         </div>
       </div>
     </main>
+     <!-- Toast de Bootstrap para mostrar alertas -->
+     <div
+     id="toastContainer"
+     aria-live="polite"
+     aria-atomic="true"
+     class="position-fixed top-0 start-50 translate-middle-x p-3 w-100"
+     style="z-index: 11; max-width: 100%;"
+   >
+     <div id="toast" class="toast w-100" role="alert" aria-live="assertive" aria-atomic="true">
+       <div class="toast-header">
+         <strong class="me-auto">Notificación</strong>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="toast"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="toast-body" id="toastMessage"></div>
+     </div>
+   </div>
 
     <footer id="footer-container"></footer>
 
