@@ -277,6 +277,49 @@ body {
   box-shadow: none !important; /* Si Bootstrap agrega sombra, la elimina */
 }
 
+/*Begin products styles*/
+.products *{
+  color: #38454C;
+}
+
+.products button{
+  background-color: #37C7BD;
+}
+
+.products button:hover{
+  color: #38454C;
+}
+
+.products .btn.dropdown-toggle.show {
+  background-color: #2da89c;
+  color: #38454C;
+}
+
+.btn-custom-dropdown:focus,
+.btn-custom-dropdown:active,
+.btn-custom-dropdown.active,
+.btn-custom-dropdown.show {
+  background-color: #ffffff !important;
+  color: #38454C !important;
+  box-shadow: none !important;
+}
+
+.products-img{
+  height: 40%;
+  width: 90%;
+  margin-top: 5%;
+  object-fit: cover;
+}
+
+.bg-white-opacity {
+  background-color: rgba(255, 255, 255, 0.514);
+}
+
+.col-product{
+  height: 440px;
+}
+/*End products styles*/
+
 /* Estilos para el toast responsivo */
 .toast {
   max-width: 90%; /* Limita el ancho máximo del toast */
