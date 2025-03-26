@@ -17,7 +17,7 @@
 
   <main>
     <div class="container products">
-      <div class="jumbotron border border-1 rounded-3 mt-4 mb-5 p-4">
+      <div class="jumbotron border border-1 rounded-3 mt-4 mb-5 p-4 bg-white-opacity">
         <div class="row">
           <div class="col-sm-5 text-center align-content-center">
             <h1 class="display-4 jockey">Oferta!</h1>
@@ -32,48 +32,67 @@
       </div>
       <div class="roboto-flex">
         <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Nombre ⇅
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">A-Z</a></li>
-            <li><a class="dropdown-item" href="#">Z-A</a></li>
+          <ul class="dropdown-menu btn-custom-dropdown dropdown-toggle">
+            <li><a class="dropdown-item" onclick="sortNameAZ()">A-Z</a></li>
+            <li><a class="dropdown-item" onclick="sortNameZA()">Z-A</a></li>
           </ul>
         </div>
         <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Precio ⇅
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">$↑</a></li>
-            <li><a class="dropdown-item" href="#">$↓</a></li>
+            <li><a class="dropdown-item" onclick="sortPriceDesc()">$↑</a></li>
+            <li><a class="dropdown-item" onclick="sortPriceAsc()">$↓</a></li>
             <li>
           </ul>
         </div>
+        <!-- esta por definirse
         <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle border-0 rounded-4 mb-2 btn-custom-color"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Tamaño ⇅
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">↑Grande ↓Pequeño</a></li>
-            <li><a class="dropdown-item" href="#">↑Pequeño ↓Grande</a></li>
+            <li><a class="dropdown-item" onclick="sortSizeAsc()">↑Grande ↓Pequeño</a></li>
+            <li><a class="dropdown-item" onclick="sortSizeDesc()">↑Pequeño ↓Grande</a></li>
           </ul>
         </div>
+        -->
+        <button type="button" class="btn border-0 rounded-4 mb-2 btn-custom-color"
+          onclick="resetProducts()">
+          ↻
+        </button>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-2 mb-2" id="productsCards">
           <!-- Renderización de elementos Products cards-->
         </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3 text-center">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+            <div class="toast-body">
+              Se agrego existosamente al carrito.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
 
   <footer id="footer-container"></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="../js/products.js"></script>
   <script src="../js/navbar.js"></script>
   <script src="../js/footer.js"></script>

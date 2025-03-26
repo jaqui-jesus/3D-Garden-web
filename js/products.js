@@ -1,108 +1,218 @@
 const Products = [
   {
     id: 1,
-    title: "Puma Rose",
-    image:
-      "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description:
-      "Calzado deportivo versátil, ideal para cualquier ocasión, con diseño moderno y comodidad duradera.",
+    title: "Opaco café",
+    image: "https://images.pexels.com/photos/931186/pexels-photo-931186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Maceta elegante en tono café, perfecta para plantas pequeñas y suculentas.",
     quantityStock: 1,
     price: 2500.0,
-    categories: ["Fashion", " Calzado"],
-    brand: "Puma",
+    brand: "3D-Garden",
   },
   {
     id: 2,
-    title: "Nike Y2K",
-    image:
-      "https://images.unsplash.com/photo-1590673846749-e2fb8f655df8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM2fHxzaG9lc3xlbnwwfHwwfHx8MA%3D%3D",
-    description:
-      "Tenis clásicos que combinan estilo y funcionalidad, perfectos para el día a día o actividades deportivas",
+    title: "Mini fuente",
+    image: "https://images.pexels.com/photos/6231857/pexels-photo-6231857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Encantador florero mini con diseño de fuente, ideal para centros de mesa.",
     quantityStock: 5,
     price: 3800.0,
-    categories: ["Diseñador", " Calzado"],
-    brand: "Nike",
+    brand: "3D-Garden",
   },
   {
     id: 3,
-    title: "Nike Air Max v2",
-    image:
-      "https://images.unsplash.com/photo-1600185365778-7875a359b924?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8",
-    description:
-      "Zapatillas cómodas y resistentes, diseñadas para ofrecer soporte y estilo en cada paso.",
+    title: "Acompañante de sueño",
+    image: "https://images.pexels.com/photos/7663251/pexels-photo-7663251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Maceta moderna para tu planta de dormitorio, promueve la relajación.",
     quantityStock: 10,
     price: 3500.0,
-    categories: ["Comodidad", " Calzado"],
-    brand: "Nike",
+    brand: "3D-Garden",
   },
   {
     id: 4,
-    title: "Levi's",
-    image:
-      "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY4fHx8ZW58MHx8fHx8",
-    description:
-      "Tenis con un diseño atemporal, ideales para un look casual y un rendimiento óptimo.",
+    title: "Jardin de niños",
+    image: "https://images.pexels.com/photos/11286045/pexels-photo-11286045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Divertido juego de macetas infantiles para iniciar pequeños jardineros.",
     quantityStock: 2,
     price: 1800.0,
-    categories: ["Casual", " Calzado"],
-    brand: "Levi's",
+    brand: "3D-Garden",
   },
   {
     id: 5,
-    title: "Jordan F5",
-    image:
-      "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2N3x8fGVufDB8fHx8fA%3D%3D",
-    description:
-      "Calzado deportivo ligero y flexible, perfecto para movilidad y confort en cualquier actividad.",
+    title: "Juego de bases",
+    image: "https://images.pexels.com/photos/4045533/pexels-photo-4045533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Set de macetas modulares para crear composiciones florales únicas.",
     quantityStock: 8,
     price: 1500.0,
-    categories: ["Basquetbol", " Calzado"],
-    brand: "Jordan",
+    brand: "3D-Garden",
   },
   {
-    id: 5,
-    title: "Jordan F5",
-    image:
-      "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2N3x8fGVufDB8fHx8fA%3D%3D",
-    description:
-      "Calzado deportivo ligero y flexible, perfecto para movilidad y confort en cualquier actividad.",
+    id: 6,
+    title: "Romano",
+    image: "https://images.pexels.com/photos/4272613/pexels-photo-4272613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Florero clásico de inspiración romana para arreglos sofisticados.",
     quantityStock: 8,
     price: 1500.0,
-    categories: ["Basquetbol", " Calzado"],
-    brand: "Jordan",
+    brand: "3D-Garden",
+  },
+  {
+    id: 7,
+    title: "Tomáte",
+    image: "https://images.pexels.com/photos/8170226/pexels-photo-8170226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Maceta especial para cultivar tomates cherry en interiores.",
+    quantityStock: 1,
+    price: 2500.0,
+    brand: "3D-Garden",
+  },
+  {
+    id: 8,
+    title: "Suculenta",
+    image: "https://images.pexels.com/photos/773805/pexels-photo-773805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Maceta diseñada especialmente para el crecimiento de suculentas.",
+    quantityStock: 5,
+    price: 3800.0,
+    brand: "3D-Garden",
+  },
+  {
+    id: 9,
+    title: "Mini flor",
+    image: "https://images.pexels.com/photos/1191318/pexels-photo-1191318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Pequeño florero para ramitos de flores frescas o secas.",
+    quantityStock: 10,
+    price: 3500.0,
+    brand: "3D-Garden",
+  },
+  {
+    id: 10,
+    title: "Maceta grande",
+    image: "https://images.pexels.com/photos/3771640/pexels-photo-3771640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    description: "Amplia maceta para plantas de gran tamaño o pequeños árboles.",
+    quantityStock: 2,
+    price: 1800.0,
+    brand: "3D-Garden",
   },
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+// Filter dropdowns
+document.querySelectorAll(".filter-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.category;
+    document.querySelectorAll(".item").forEach((item) => {
+      item.style.display =
+        item.dataset.category === category ? "block" : "none";
+    });
+  });
+});
+
+function sortNameAZ() {
+  const sortedProducts = [...Products].sort((a, b) =>
+    a.title.localeCompare(b.title)
+  );
+  renderProducts(sortedProducts);
+}
+
+function sortNameZA() {
+  const sortedProducts = [...Products].sort((a, b) =>
+    b.title.localeCompare(a.title)
+  );
+  renderProducts(sortedProducts);
+}
+
+function sortPriceAsc() {
+  const sortedProducts = [...Products].sort((a, b) => a.price - b.price);
+  renderProducts(sortedProducts);
+}
+
+function sortPriceDesc() {
+  const sortedProducts = [...Products].sort((a, b) => b.price - a.price);
+  renderProducts(sortedProducts);
+}
+
+function sortSizeAsc() {
+  const sortedProducts = [...Products].sort((a, b) => a.size - b.size);
+  renderProducts(sortedProducts);
+}
+
+function sortSizeDesc() {
+  const sortedProducts = [...Products].sort((a, b) => b.size - a.size);
+  renderProducts(sortedProducts);
+}
+
+function resetProducts() {
+  renderProducts(Products);
+}
+
+function addToCart(productId) {
+
+  const product = Products.find((p) => p.id === productId);
+
+  // Retrieve existing cart from local storage
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if product already exists
+  const idProduct = cart.findIndex((item) => item.id === productId);
+
+  if (idProduct > -1) {
+    cart[idProduct].quantity += 1;
+    showToast(`${product.title} ya existe en tu carrito.`);
+  } else {
+    cart.push({
+      ...product,
+      quantity: 1,
+    });
+    
+    showToast(`${product.title} agregado al carrito!`);
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+const toastLiveExample = document.getElementById('liveToast');
+const toast = new bootstrap.Toast(toastLiveExample);
+
+function showToast(message) {
+  toastLiveExample.querySelector('.toast-body').textContent = message;
+  toast.show();
+}
+
+function renderProducts(Products) {
   const productCard = document.getElementById("productsCards");
+  productCard.innerHTML = "";
 
   Products.forEach((product) => {
-    //Declaration of card elements
     const col = document.createElement("div");
-    col.className = "col col-product";
+    col.className = "col col-product pb-3";
     const card = document.createElement("div");
     card.className = "card d-flex flex-column h-100 align-items-center";
     const img = document.createElement("img");
     img.className = "card-img-top img-fluid rounded products-img";
     const cardBody = document.createElement("div");
-    cardBody.className = "card-body d-flex flex-column justify-content-between";
+    cardBody.className = "card-body text-center";
     const cardTitle = document.createElement("h5");
     cardTitle.className = "card-title";
     const cardText = document.createElement("p");
     cardText.className = "card-text";
     const addCart = document.createElement("a");
-    addCart.className = "btn btn-primary";
+    addCart.className = "text-decoration-none text-primary-hover";
 
-    //Set values for each element
     img.src = product.image;
-    cardTitle.innerHTML = product.brand;
-    cardText.innerHTML = "Precio: $" + product.price + ".00" + "<br>" +"categorias: "+ product.categories;
-    addCart.innerHTML = "agregar al carrito";
+    cardTitle.innerHTML = product.title;
+    cardText.innerHTML =
+      "Precio: $" +
+      product.price +
+      ".00" +
+      "<br>" +
+      "Descripción: " +
+      product.description;
+    addCart.innerHTML = '<i class="bi bi-cart fs-1"></i>';
+    addCart.addEventListener('click', function() {
+      addToCart(product.id);
+    });
 
-    //add to the HTML each element
     cardBody.append(cardTitle, cardText, addCart);
     card.append(img, cardBody);
     col.append(card);
     productCard.append(col);
   });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderProducts(Products);
 });

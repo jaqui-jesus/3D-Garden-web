@@ -274,6 +274,24 @@ body {
   background-color: #37C7BD;
 }
 
+.products button:hover{
+  color: #38454C;
+}
+
+.products .btn.dropdown-toggle.show {
+  background-color: #2da89c;
+  color: #38454C;
+}
+
+.btn-custom-dropdown:focus,
+.btn-custom-dropdown:active,
+.btn-custom-dropdown.active,
+.btn-custom-dropdown.show {
+  background-color: #ffffff !important;
+  color: #38454C !important;
+  box-shadow: none !important;
+}
+
 .products-img{
   height: 40%;
   width: 90%;
@@ -281,7 +299,11 @@ body {
   object-fit: cover;
 }
 
+.bg-white-opacity {
+  background-color: rgba(255, 255, 255, 0.514);
+}
+
 .col-product{
-  height: 480px;
+  height: 440px;
 }
 /*End products styles*/
