@@ -332,7 +332,12 @@ body {
   }
 }
 
-
+/*Start management styles*/
+.management-img{
+  max-width: 175px;
+  height: auto;
+}
+/*End management styles*/
 
 /* 
 Shopping cart review

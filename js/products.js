@@ -164,11 +164,11 @@ function addToCart(productId) {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-const toastLiveExample = document.getElementById('liveToast');
-const toast = new bootstrap.Toast(toastLiveExample);
+const toastProducts = document.getElementById('liveToast');
+const toast = new bootstrap.Toast(toastProducts);
 
 function showToast(message) {
-  toastLiveExample.querySelector('.toast-body').textContent = message;
+  toastProducts.querySelector('.toast-body').textContent = message;
   toast.show();
 }
 
