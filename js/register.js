@@ -5,9 +5,6 @@ window.onload = function() {
         behavior: 'auto' // 'smooth' para un efecto suave
     });
     
-    // O si prefieres centrar un elemento específico:
-    // const element = document.getElementById('tu-elemento');
-    // element.scrollIntoView({behavior: 'auto', block: 'center'});
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contraseña = formulario.querySelector('input[placeholder="Contraseña"]');
     const confirmarContraseña = formulario.querySelector('input[placeholder="Confirma contraseña"]');
 
-     // Focar automáticamente en el primer campo de texto
+     // enfocar automáticamente en formulario
     document.querySelector('input[type="text"]').focus();
 
     confirmarContraseña.addEventListener("input", () => {
@@ -29,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formulario.addEventListener("submit", (evento) => {
         evento.preventDefault();
         
-        const usuario = formulario.querySelector('input[placeholder="Nombre de usuario"]');
+        const usuario = formulario.querySelector('input[placeholder="Nombre completo"]');
         const correo = formulario.querySelector('input[placeholder="Correo electrónico"]');
         
         let esValido = true;
@@ -57,6 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         if (esValido) {
+            const datosUsuario = {
+                nombre: usuario.value.trim(),
+                email: correo.value.trim(),
+                contraseña: contraseña.value.trim()  // (No se recomienda almacenar contraseñas en texto plano.)
+
+            };
+            // Guardardando los datos en localStorage (o enviar a un servidor)
+
+            console.log("Usuario registrado:", JSON.stringify(datosUsuario, null, 2));
+            
+            localStorage.setItem("usuario", JSON.stringify(datosUsuario));
             alert("Registro exitoso");
             formulario.reset();
         
@@ -64,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             window.location.href = "login.html";
         }, 1500);
-    }
+        }
     });
 
     function mostrarError(input, mensaje, tipo) {
