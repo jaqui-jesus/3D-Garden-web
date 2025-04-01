@@ -354,3 +354,42 @@ Shopping cart review
   text-align: center;
 } */
 
+/* LOGIN - Estilos del carrusel */
+.carousel {
+  max-width: 450px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrar el carrusel */
+  text-align: center;
+}
+
+.carousel img {
+  width: 40vw; /* Hace que la imagen se ajuste al carrusel */
+  height: auto; /* Altura fija para todas las imágenes */
+  max-height: 500px;
+  object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.bg-blue {
+  background-color: #C5EBE8 !important; /* Fondo azul */
+}
+
+
+.login-container{
+  margin: 2em;
+  padding: 2em;
+  background-color: #C5EBE8 !important; /* Fondo azul */
+  border-radius: 10px;
+  
+}
+
+.login-container p {
+  font-size: 30px;
+}
+
+.success {
+  color: #28a745; /* Verde para éxito */
+}
+
+.border-success {
+  border-color: #28a745 !important; /* Borde verde */
+}
