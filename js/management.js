@@ -147,7 +147,7 @@ function renderManagement(Products) {
     td_price.className = "align-middle";
     td_manage.classList = "align-middle";
     td_manage.innerHTML =
-      '<div class="d-flex gap-2"> <button class="btn btn-danger" type="submit">Eliminar</button> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editProduct">Editar</button></div>';
+      '<div class="d-flex gap-2"> <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#confirmDeleteProduct">Eliminar</button> <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editProduct">Editar</button></div>';
 
     th.innerHTML = product.id;
     td.innerHTML = product.title;
@@ -170,6 +170,11 @@ function renderManagement(Products) {
   });
 
   table.append(thead, tbody);
+}
+
+function showDeleteProductAlert(){
+  var deleteProductAlert = document.getElementById("deleteProduct");
+  deleteProductAlert.classList.remove("d-none");
 }
 
 document.addEventListener("DOMContentLoaded", () => {

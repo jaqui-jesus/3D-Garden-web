@@ -54,23 +54,23 @@
             <form>
               <div class="mb-3">
                 <label for="title" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="title">
+                <input type="text" class="form-control" id="title" required>
               </div>
               <div class="mb-3">
                 <label for="image" class="form-label">Imagen</label>
-                <input type="file" class="form-control" id="image">
+                <input type="file" class="form-control" id="image" required>
               </div>
               <div class="mb-3">
                 <label for="description" class="form-label">Descripción</label>
-                <input type="text" class="form-control" id="description">
+                <input type="text" class="form-control" id="description" required>
               </div>
               <div class="mb-3">
                 <label for="quantityStock" class="form-label">Stock</label>
-                <input type="number" class="form-control" id="quantityStock">
+                <input type="number" class="form-control" id="quantityStock" required>
               </div>
               <div class="mb-3">
                 <label for="price" class="form-label">Precio</label>
-                <input type="number" class="form-control" id="price">
+                <input type="number" class="form-control" id="price" required>
               </div>
               <button type="submit" class="btn btn-primary">Agregar</button>
             </form>
@@ -114,7 +114,25 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Modal eliminar -->
+      <div class="modal fade" id="confirmDeleteProduct" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmar eliminación</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>¿Estás seguro que deseas eliminar este producto?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
 
   <footer id="footer-container"></footer>
