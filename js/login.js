@@ -6,9 +6,6 @@ window.onload = function() {
         behavior: 'auto' // 'smooth' para un efecto suave
     });
     
-    // O si prefieres centrar un elemento específico:
-    // const element = document.getElementById('tu-elemento');
-    // element.scrollIntoView({behavior: 'auto', block: 'center'});
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const correo = formulario.querySelector('input[placeholder="Ingresa tu correo electrónico"]');
     const contraseña = formulario.querySelector('input[placeholder="Ingresa tu contraseña"]');
 
-    // Focar automáticamente en el primer campo de texto
+    // Focar automáticamente en el formulario
     document.querySelector('input[type="text"]').focus();
     
     formulario.addEventListener("submit", (evento) => {
@@ -41,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         if (esValido) {
-        // Simulación de inicio de sesión exitoso (aquí va tu lógica de backend)
+        // Simulación de inicio de sesión exitoso (aquí va la lógica de backend)
             alert("Inicio de sesión exitoso");
             formulario.reset();
 
-        // Redirigir a la página principal después de 1.5 segundos
+        // Redirigir a la página del login
             setTimeout(() => {
-            window.location.href = "../index.html";  // Redirige a la página principal, puedes cambiar esto según tu flujo
+            window.location.href = "../index.html"; 
             }, 1500);
         }
     });
