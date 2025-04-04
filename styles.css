@@ -10,8 +10,6 @@ body {
 }
 
 #container-grid {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   background-color: #f4f7e4 !important;
   min-height: 100%;
   width: 100%;
@@ -52,6 +50,10 @@ body {
 .bg-green-opacity {
   background-color: rgba(244, 247, 228, 0.8);
 
+}
+
+.bg-blue {
+  background-color: #C5EBE8 !important;
 }
 
 /* begin index.html style */
