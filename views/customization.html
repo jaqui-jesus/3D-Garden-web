@@ -58,7 +58,7 @@
                         placeholder="Altura"
                         id="altura"
                         min="10"
-                        max="23"
+                        max="30"
                         value="10"
                         required
                       />
@@ -82,7 +82,7 @@
                         placeholder="Profundidad"
                         id="profundidad"
                         min="10"
-                        max="23"
+                        max="30"
                         value="10"
                         required
                       />
@@ -108,14 +108,14 @@
                   <button
                     type="button"
                     id="borrarImagen"
-                    class="btn btn-primary mt-2"
+                    class="btn btn-success mt-2"
                     style="display: none"
                   >
                     Borrar Imagen
                   </button>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 roboto-flex">
+                <button type="submit" class="btn btn-success w-100 roboto-flex">
                   Enviar
                 </button>
               </form>
@@ -127,17 +127,16 @@
      <!-- Toast de Bootstrap para mostrar alertas -->
      <div
      id="toastContainer"
-     aria-live="polite"
+     aria-live="assertive"
      aria-atomic="true"
-     class="position-fixed top-0 start-50 translate-middle-x p-3 w-100"
-     style="z-index: 11; max-width: 100%;"
+     class="position-fixed top-50 start-50 translate-middle text-center"
    >
-     <div id="toast" class="toast w-100" role="alert" aria-live="assertive" aria-atomic="true">
+     <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
        <div class="toast-header">
          <strong class="me-auto">Notificación</strong>
          <button
            type="button"
-           class="btn-close"
+           class="btn-close btn-custom-color"
            data-bs-dismiss="toast"
            aria-label="Close"
          ></button>
