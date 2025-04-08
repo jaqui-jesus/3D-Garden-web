@@ -1,5 +1,5 @@
 // Función para mostrar un toast de Bootstrap
-function mostrarToast(mensaje) {
+function showToast(mensaje) {
     const toastMessage = document.getElementById("toastMessage");
     const toast = new bootstrap.Toast(document.getElementById("toast"));
   
@@ -21,10 +21,10 @@ function mostrarToast(mensaje) {
     // Verifica si los campos de forma y dimensiones están vacíos.
     if (!diseñoMaceta || !altura || !ancho || !profundidad) {
       // Muestra una alerta si algún campo obligatorio no está completado.
-      mostrarToast("Por favor, complete todos los campos obligatorios: forma y dimensiones.");
+      showToast("Por favor, complete todos los campos obligatorios: forma y dimensiones.");
     } else {
       // Muestra una alerta indicando que el pedido se ha registrado correctamente.
-      mostrarToast(
+      showToast(
         "Su pedido ha sido registrado exitosamente. Recibirá un correo para confirmar su diseño o realizar cambios."
       );
   
@@ -56,5 +56,5 @@ function mostrarToast(mensaje) {
     // Oculta el botón de borrar.
     botonBorrarImagen.style.display = "none";
     // Muestra un mensaje de confirmación.
-    mostrarToast("La imagen ha sido eliminada correctamente.");
+    showToast("La imagen ha sido eliminada correctamente.");
   });
