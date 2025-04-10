@@ -18,66 +18,63 @@
   <main>
     <div class="container mt-1">
       <ul class="nav nav-tabs">
-        <!-- por desarrollar
         <li class="nav-item">
           <a class="nav-link active" id="products-tab" aria-current="page" href="#">Productos</a>
         </li>
+        <!-- por desarrollar
         <li class="nav-item">
           <a class="nav-link" id="users-tab" href="#">Usuarios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="orders-tab" href="#">Pedidos</a>
         </li>
-        <li>
         -->
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProduct">
-          Agregar nuevo producto
-        </button>
+        <li>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProduct">
+            Agregar nuevo producto
+          </button>
         </li>
       </ul>
-
-      <table id="mainTable" class="table mt-2"></table>
-    </div>
-
-
-
-    <!-- Modal agregar -->
-    <div class="modal fade" id="addProduct" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Agregar Producto</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="title" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="title" required>
-              </div>
-              <div class="mb-3">
-                <label for="image" class="form-label">Imagen</label>
-                <input type="file" class="form-control" id="image" required>
-              </div>
-              <div class="mb-3">
-                <label for="description" class="form-label">Descripción</label>
-                <input type="text" class="form-control" id="description" required>
-              </div>
-              <div class="mb-3">
-                <label for="quantityStock" class="form-label">Stock</label>
-                <input type="number" class="form-control" id="quantityStock" required>
-              </div>
-              <div class="mb-3">
-                <label for="price" class="form-label">Precio</label>
-                <input type="number" class="form-control" id="price" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Agregar</button>
-            </form>
+      <div class="table-container">
+        <table id="mainTable" class="table mt-2"></table>
+      </div>
+      <!-- Modal agregar -->
+      <div class="modal fade" id="addProduct" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Agregar Producto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="title" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="mb-3">
+                  <label for="image" class="form-label">Imagen</label>
+                  <input type="file" class="form-control" id="image" required>
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label">Descripción</label>
+                  <input type="text" class="form-control" id="description" required>
+                </div>
+                <div class="mb-3">
+                  <label for="quantityStock" class="form-label">Stock</label>
+                  <input type="number" class="form-control" id="quantityStock" required>
+                </div>
+                <div class="mb-3">
+                  <label for="price" class="form-label">Precio</label>
+                  <input type="number" class="form-control" id="price" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-
       <!-- Modal editar -->
       <div class="modal fade" id="editProduct" tabindex="-1">
         <div class="modal-dialog">
@@ -90,31 +87,30 @@
               <form>
                 <div class="mb-3">
                   <label for="edit_title" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="edit_title">
+                  <input type="text" class="form-control" id="edit_title" required>
                 </div>
                 <div class="mb-3">
                   <label for="edit_image" class="form-label">Imagen</label>
-                  <input type="file" class="form-control" id="edit_image">
+                  <input type="file" class="form-control" id="edit_image" required>
                 </div>
                 <div class="mb-3">
                   <label for="edit_description" class="form-label">Descripción</label>
-                  <input type="text" class="form-control" id="edit_description">
+                  <input type="text" class="form-control" id="edit_description" required>
                 </div>
                 <div class="mb-3">
                   <label for="edit_quantityStock" class="form-label">Stock</label>
-                  <input type="number" class="form-control" id="edit_quantityStock">
+                  <input type="number" class="form-control" id="edit_quantityStock" required>
                 </div>
                 <div class="mb-3">
                   <label for="edit_price" class="form-label">Precio</label>
-                  <input type="number" class="form-control" id="edit_price">
+                  <input type="number" class="form-control" id="edit_price" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Confirmar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
               </form>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Modal eliminar -->
       <div class="modal fade" id="confirmDeleteProduct" tabindex="-1">
         <div class="modal-dialog">
@@ -133,6 +129,7 @@
           </div>
         </div>
       </div>
+    </div>
   </main>
 
   <footer id="footer-container"></footer>

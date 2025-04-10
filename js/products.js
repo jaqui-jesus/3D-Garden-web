@@ -186,9 +186,9 @@ function renderProducts(Products) {
     const cardBody = document.createElement("div");
     cardBody.className = "card-body text-center";
     const cardTitle = document.createElement("h5");
-    cardTitle.className = "card-title";
+    cardTitle.className = "card-title card-title-products";
     const cardText = document.createElement("p");
-    cardText.className = "card-text";
+    cardText.className = "card-text card-text-product";
     const addCart = document.createElement("a");
     addCart.className = "text-decoration-none text-primary-hover";
 
