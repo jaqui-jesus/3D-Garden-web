@@ -311,9 +311,12 @@ body {
   object-fit: cover;
 }
 
+.card-title{
+  height: 45px;
+}
+
 .card-text-product{
-  min-height: 90px;
-  max-height: 90px;
+  height: 90px;
   overflow: hidden;
 }
 
