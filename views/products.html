@@ -20,9 +20,9 @@
       <div class="jumbotron border border-1 rounded-3 mt-4 mb-5 p-4 bg-white-opacity">
         <div class="row">
           <div class="col-sm-5 text-center align-content-center">
-            <h1 class="display-4 jockey">Oferta!</h1>
-            <p class="lead roboto-flex">En la compra de 2 macetas, el envio -50%.</p>
-            <p class="roboto-flex">Aprovecha la oferta, solo esta disponible por tiempo limitado.</p>
+            <h1 class="display-4 jockey">Nuevas macetas!</h1>
+            <p class="lead roboto-flex">Aprovecha las nuevas macetas que nos llegaron.</p>
+            <p class="roboto-flex">No olvides que tenemos una opción para enviar un maceta personalizada.</p>
           </div>
           <div class="col-sm-5 flex-fill d-flex justify-content-center justify-content-sm-end align-items-center">
             <img src="https://i.pinimg.com/736x/86/3d/bd/863dbd09a8339f3073a1ffa9cc7e5183.jpg"
@@ -64,10 +64,10 @@
           </ul>
         </div>
         -->
-        <button type="button" class="btn border-0 rounded-4 mb-2 btn-custom-color"
-          onclick="resetProducts()">
+        <button type="button" class="btn border-0 rounded-4 mb-2 btn-custom-color" onclick="resetProducts()">
           ↻
         </button>
+        <a href="../views/customization.html" class="btn border-0 rounded-4 mb-2 btn-custom-color" tabindex="-1" role="button" aria-disabled="true">Personalizar</a>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-2 mb-2" id="productsCards">
           <!-- Renderización de elementos Products cards-->
@@ -76,8 +76,8 @@
         <div class="toast-container position-fixed bottom-0 end-0 p-3 text-center">
           <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
             <div class="toast-body">
               Se agrego existosamente al carrito.
             </div>

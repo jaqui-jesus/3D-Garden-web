@@ -16,30 +16,32 @@
   <header id="navbar-container" class="sticky-top"></header>
 
   <main>
-    <div class="container mt-1">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" id="products-tab" aria-current="page" href="#">Productos</a>
-        </li>
-        <!-- por desarrollar
-        <li class="nav-item">
-          <a class="nav-link" id="users-tab" href="#">Usuarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="orders-tab" href="#">Pedidos</a>
-        </li>
-        -->
-        <li>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProduct">
-            Agregar nuevo producto
-          </button>
-        </li>
-      </ul>
-      <div class="table-container">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <!-- Managament tabs -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+        <a class="nav-link active" id="products-tab" aria-current="page" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+        <a class="nav-link" id="users-tab" href="#">Usuarios</a>
+          </li>
+          <li class="nav-item">
+        <a class="nav-link" id="orders-tab" href="#">Pedidos</a>
+          </li>
+        </ul>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProduct">
+          Agregar nuevo producto
+        </button>
+      </div>
+
+      <div class="table-container overflow-auto">
         <table id="mainTable" class="table mt-2"></table>
       </div>
-      <!-- Modal agregar -->
+
+      <!-- Modal add product -->
       <div class="modal fade" id="addProduct" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -75,7 +77,8 @@
           </div>
         </div>
       </div>
-      <!-- Modal editar -->
+
+      <!-- Modal edit product -->
       <div class="modal fade" id="editProduct" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -111,7 +114,8 @@
           </div>
         </div>
       </div>
-      <!-- Modal eliminar -->
+
+      <!-- Modal delete product -->
       <div class="modal fade" id="confirmDeleteProduct" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
