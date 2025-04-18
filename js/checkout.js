@@ -27,6 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateAddressView();
 
+  function showToast(message, bgClass) {
+    const toastElement = document.getElementById("main-toast");
+    const toastBody = document.getElementById("toast-body");
+
+    toastBody.textContent = message;
+
+    toastElement.className = `toast align.items-center texte-white ${bgClass} border-0`;
+
+    const bsToast = new bootstrap.Toast(toastElement);
+    bsToast.show();
+  }
+
+  showToast(
+    "Este formulario de pago es únicamente con fines de demostración. Por favor, no proporciones información real.",
+    "bg-warning"
+  );
+
   document.getElementById("use-saved").addEventListener("change", () => {
     if (document.getElementById("use-saved").checked) {
       shippingForm.classList.add("d-none");
@@ -51,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const [month, year] = e.target.value.split("/").map(Number);
     const currentYear = new Date().getFullYear() % 100;
     if (month < 1 || month > 12 || year < currentYear) {
-      alert("Fecha de expiración inválida");
+      showToast("Fecha de expiración inválida", "bg-danger");
       e.target.value = "";
     }
   });
@@ -121,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     localStorage.setItem("address", JSON.stringify(data));
 
-    alert("Dirección guardada");
+    showToast("Dirección guardada", "bg-success");
     const userAddress = `${data.street} ${data.extNum} ${
       data.intNum ? data.intNum : ""
     } ${data.city} ${data.state}`;
@@ -144,11 +161,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const address = JSON.parse(localStorage.getItem("address"));
 
     if (!address) {
-      alert("Debe ingresar una dirección antes de continuar con el pago.");
+      showToast(
+        "Debe ingresar una dirección antes de continuar con el pago.",
+        "bg-danger"
+      );
       e.preventDefault();
       return;
     }
-    
+
     e.preventDefault();
     // Only for exaple purposes
     const data = {
