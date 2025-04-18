@@ -27,22 +27,26 @@ const imgProducts = [
 document.addEventListener("DOMContentLoaded", () => {
   const productsContainer = document.getElementById("products-container");
 
-  imgProducts.forEach(img => {
+  imgProducts.forEach((img) => {
+    const link = document.createElement("a");
+    link.href = "../views/products.html";
+    link.className =
+      "product-link text-decoration-none col-12 col-md-6 col-lg-4 d-flex justify-content-center my-2 p-2";
+
     const imgContainer = document.createElement("div");
-    imgContainer.className =
-      "col-12 col-md-6 col-lg-4 d-flex justify-content-center my-2 p-2";
+    imgContainer.className = "product-hover w-100";
 
     const product = document.createElement("img");
     product.src = img.url;
     product.alt = img.alt;
     product.className = "img-fluid rounded-4";
     product.style.width = "100%";
-    product.style.maxWidth = "350px"; 
-    product.style.height = "350px"; 
-    product.style.objectFit = "cover"; 
+    product.style.maxWidth = "350px";
+    product.style.height = "350px";
+    product.style.objectFit = "cover";
 
     imgContainer.appendChild(product);
-    productsContainer.appendChild(imgContainer);
-
-  })
+    link.appendChild(imgContainer);
+    productsContainer.appendChild(link);
+  });
 });
