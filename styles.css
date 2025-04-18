@@ -88,6 +88,14 @@ body {
 .btn-custom-color:hover {
   background-color: rgba(55, 199, 189, 0.8); /* Fondo con opacidad */
 }
+
+.product-link:hover .product-hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.product-hover {
+  transition: transform 0.3s ease-in-out;
+}
 /*End index.html styles*/
 
 /* Estilos thank-you */
