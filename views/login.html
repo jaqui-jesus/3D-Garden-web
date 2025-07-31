@@ -10,106 +10,69 @@
       crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
-    />
-    <link rel="icon" href="../assets/meta-logo.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
+    <link rel="icon" href="../assets/meta-logo.png">
     <title>Inicia Sesión</title>
   </head>
   <body id="container-grid">
     <header id="navbar-container" class="fixed-top"></header>
-
-    <main class="pt-5">
-      <section class="container mt-5 fs-1 fs-md-3 fs-lg-5">
-        <h1 class="text-center display-1 d-none d-sm-block jockey">
-          3D-GARDEN
-        </h1>
-        <p class="text-center roboto-flex">¡Bienvenido!</p>
+    <main class="mt-5">
+      <section class="mt-5">
+        <!-- Título grande para pantallas medianas en adelante -->
+        <div class="container mb-5 bg-green-opacity rounded-3">
+          <h1 class="text-center display-3 d-none d-sm-block jockey">Inicia Sesión</h1>
+        </div>
+        <!-- Título pequeño para móviles -->
+        <div class="container mb-5 bg-green-opacity rounded-3">
+          <h1 class="text-center display-5 d-block d-sm-none jockey">Inicia Sesión</h1>
+        </div>
       </section>
-
-      <section class="login-container my-md-5 my-3 py-md-4 py-2">
+      <section class="login-container my-3 py-md-4 py-2"> 
         <div class="row align-items-stretch">
-          <!-- Eliminado d-flex (row ya es flex) -->
-          <!-- Formulario en el lado izquierdo -->
+          <!-- Formulario -->
           <div class="col-12 col-md-6 d-flex">
-            <div class="login-container p-4 rounded bg-blue w-100 text-center">
-              <!-- text-center movido aquí -->
-              <h2>Iniciar Sesión</h2>
-              <!-- Eliminado text-center (heredado) -->
-              <p>
-                ¡Descubre nuestros productos y dale vida a tu espacio favorito!
-              </p>
-              <!-- Eliminado text-center -->
+            <div class="p-4 rounded-3 bg-blue w-100 text-center font-size-1 roboto-flex">
+              <div class="mb-3">
+                <h2>¡Un gusto tenerte de vuelta!</h2>
+              </div>
+              <p class="text-center lead">Echa un vistazo a lo nuevo de nuestros productos y dale vida a tu espacio favorito</p>
               <form>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Ingresa tu correo electrónico"
-                    required
-                  />
+                <div class="mb-4">
+                  <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico" required>
                 </div>
-                <div class="mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Ingresa tu contraseña"
-                    required
-                  />
+                <div class="mb-4">
+                  <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">
-                  Ingresar
-                </button>
-                <div class="mt-2">
-                  <!-- text-center eliminado (heredado) -->
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <div class="mt-4">
                   <a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
-                <div class="mt-2">
-                  <!-- text-center eliminado -->
-                  <a href="register.html" class="btn btn-secondary"
-                    >Crear una cuenta</a
-                  >
+                <div class="mt-4">
+                  <a href="register.html" class="btn btn-secondary">Crear una cuenta</a>
                 </div>
               </form>
             </div>
           </div>
 
-          <!-- Carrusel en el lado derecho -->
-          <div class="col-12 col-md-6">
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide w-100"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
+          <!-- Carrusel -->
+          <div class="col-12 col-md-6 d-flex ">
+            <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+              <div class="carousel-inner carousel-text roboto-flex">
                 <div class="carousel-item active">
-                  <img
-                    src="../assets/de pared 2_sin texto.jpg"
-                    class="d-block w-100"
-                    alt="Imagen 1"
-                  />
-                  <p>¡Decora los lugares que nunca imaginaste!</p>
+                  <img src="../assets/de pared 2_sin texto.jpg" class="d-block w-100" alt="Imagen 1">
+                  <p class="text-center lead">¡Decora los lugares que nunca imaginaste!</p>
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="../assets/columpio.jpg"
-                    class="d-block w-100"
-                    alt="Imagen 2"
-                  />
-                  <p>Los diseños mas interesantes para tu lugar de trabajo</p>
+                  <img src="../assets/columpio.jpg" class="d-block w-100" alt="Imagen 2">
+                  <p class="text-center lead">Los diseños más interesantes para tu lugar de trabajo</p>
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="../assets/pokemon.jpg"
-                    class="d-block w-100"
-                    alt="Imagen 3"
-                  />
-                  <p>Atrapa las mejores macetas antes de que se agoten.</p>
+                  <img src="../assets/pokemon.jpg" class="d-block w-100" alt="Imagen 3">
+                  <p class="text-center lead">Atrapa las mejores macetas antes de que se agoten.</p>
                 </div>
               </div>
             </div>
@@ -128,6 +91,5 @@
     <script src="../js/navbar.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/login.js"></script>
-    <!-- <script src="./js/logica-de-la-pagina"></script> -->
   </body>
 </html>
